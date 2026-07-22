@@ -16,6 +16,9 @@
     --accent:#9A6B1F;
     --accent-bright:#B47F24;
     --glow:rgba(154,107,31,.14);
+    --play:#2E7D45;
+    --play-bright:#226B38;
+    --play-glow:rgba(46,125,69,.14);
     --mono:"Cascadia Code","SF Mono","Consolas","Menlo","Liberation Mono",monospace;
     --body:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
   }
@@ -29,6 +32,9 @@
       --accent:#E8A33D;
       --accent-bright:#F5BE63;
       --glow:rgba(232,163,61,.12);
+      --play:#58B36B;
+      --play-bright:#74C985;
+      --play-glow:rgba(88,179,107,.14);
     }
   }
   :root[data-theme="dark"]{
@@ -40,6 +46,9 @@
     --accent:#E8A33D;
     --accent-bright:#F5BE63;
     --glow:rgba(232,163,61,.12);
+    --play:#58B36B;
+    --play-bright:#74C985;
+    --play-glow:rgba(88,179,107,.14);
   }
   :root[data-theme="light"]{
     --ground:#F6F1E6;
@@ -50,6 +59,9 @@
     --accent:#9A6B1F;
     --accent-bright:#B47F24;
     --glow:rgba(154,107,31,.14);
+    --play:#2E7D45;
+    --play-bright:#226B38;
+    --play-glow:rgba(46,125,69,.14);
   }
 
   /* ============ BASE ============ */
@@ -154,9 +166,9 @@
   }
   .transport button{
     position:relative;overflow:hidden;
-    display:inline-flex;align-items:center;gap:9px;
-    background:var(--glow);
-    border:1px solid var(--accent);color:var(--accent);
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--play-glow);
+    border:1px solid var(--play);color:var(--play);
     font-family:var(--mono);font-size:.8125rem;
     padding:8px 16px;border-radius:3px;cursor:pointer;
     transition:transform .25s ease, box-shadow .25s ease,
@@ -170,12 +182,15 @@
     transition:left .6s ease;
   }
   .transport button:hover{
-    border-color:var(--accent-bright);color:var(--accent-bright);
+    border-color:var(--play-bright);color:var(--play-bright);
     transform:translateY(-1px);
-    box-shadow:0 4px 16px var(--glow);
+    box-shadow:0 4px 16px var(--play-glow);
   }
   .transport button:hover::after{left:125%}
-  .transport button #playIcon{display:inline-block}
+  .transport button #playIcon{
+    display:inline-block;
+    font-size:1.15rem;line-height:1;
+  }
   .transport button:hover #playIcon{animation:wiggle .45s ease}
   @keyframes wiggle{
     0%,100%{transform:rotate(0)}
@@ -185,7 +200,7 @@
   .transport .track-title{color:var(--ink-dim);letter-spacing:.04em}
   .transport .live-dot{
     width:8px;height:8px;border-radius:50%;
-    background:var(--accent);
+    background:var(--play);
     animation:pulse 1.1s ease-in-out infinite;
   }
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}

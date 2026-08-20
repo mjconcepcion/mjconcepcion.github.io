@@ -445,12 +445,33 @@
       <article class="project reveal">
         <span class="idx">001</span>
         <div>
+          <h3>Store-to-store transfer system — We Got The Beats, in production</h3>
+          <p>
+            Inventory tool built for the three-store record chain I work at, used by staff
+            daily. Nightly Python ETL pulls a decade of POS history (600k+ line items) from
+            three Clover merchant APIs — with retry logic and two vendor API quirks diagnosed
+            from the data — cross-matches an 82k-item catalog by UPC, and allocates
+            shelf-preserving transfer pick lists with scan-ready barcodes and progress
+            tracking. Completed transfers self-clear on the next run; the recommendation
+            backlog dropped by a third in the first three weeks.
+          </p>
+          <div class="tags">
+            <span class="chip">Python / pandas</span><span class="chip">REST API</span>
+            <span class="chip">Streamlit</span><span class="chip">data quality</span>
+          </div>
+        </div>
+        <span class="plink-soon">private · in production</span>
+      </article>
+
+      <article class="project reveal">
+        <span class="idx">002</span>
+        <div>
           <h3>Retail inventory & sales analytics</h3>
           <p>
-            End-to-end analytics for a multi-location record store: Python ETL over messy
+            The public, synthetic-data architecture of the system above: Python ETL over messy
             POS exports (every fix logged in a data-quality report), SQLite, 14 SQL analyses,
             and a Streamlit dashboard. Centerpiece: store-to-store transfer recommendations
-            ranked by destination demand — ~$3.3k of sitting revenue found without buying inventory.
+            ranked by destination demand.
           </p>
           <div class="tags">
             <span class="chip">Python / pandas</span><span class="chip">SQL</span>
@@ -464,7 +485,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">002</span>
+        <span class="idx">003</span>
         <div>
           <h3>micongeneral.com — bilingual storefront & inventory admin, in production</h3>
           <p>
@@ -486,7 +507,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">003</span>
+        <span class="idx">004</span>
         <div>
           <h3>Autonomous TurtleBot 3 navigation — FAU Senior Design</h3>
           <p>
@@ -503,7 +524,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">004</span>
+        <span class="idx">005</span>
         <div>
           <h3>Search-result rating system — full-stack</h3>
           <p>
@@ -521,7 +542,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">005</span>
+        <span class="idx">006</span>
         <div>
           <h3>Medicare fraud detection on imbalanced claims data</h3>
           <p>
@@ -540,7 +561,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">006</span>
+        <span class="idx">007</span>
         <div>
           <h3>ML detection & analysis of web attacks</h3>
           <p>
@@ -558,7 +579,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">007</span>
+        <span class="idx">008</span>
         <div>
           <h3>Class-label noise in highly imbalanced big data</h3>
           <p>
@@ -576,7 +597,7 @@
       </article>
 
       <article class="project reveal">
-        <span class="idx">008</span>
+        <span class="idx">009</span>
         <div>
           <h3>Audio tooling & sound design systems</h3>
           <p>
